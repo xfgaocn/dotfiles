@@ -1,0 +1,30 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Default Light+",
+    "workbench.iconTheme": "material-icon-theme",
+
+    "editor.fontSize": 14,
+    "editor.rulers": [80],
+    "editor.renderFinalNewline": false,
+    "editor.minimap.enabled": false,
+
+    "explorer.confirmDelete": false,
+
+    "terminal.integrated.fontSize": 14,
+
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.venv": true,
+        "**/*.pyc": true,
+        "**/.idea": true
+    },
+    "files.watcherExclude": {
+        "**/__pycache__": true,
+        "**/.venv": true,
+        "**/*.pyc": true,
+        "**/.idea": true
+    }
+}

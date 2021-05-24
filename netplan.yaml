@@ -1,0 +1,11 @@
+# sudo vim /etc/netplan/99_config.yaml
+# sudo netplan apply
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: true
+    enp0s8:
+      addresses:
+        - 192.168.56.101/24

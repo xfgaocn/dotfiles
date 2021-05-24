@@ -1,0 +1,40 @@
+{
+	"#define guard": {
+		"prefix": "#ifn",
+		"body": [
+			"#ifndef ${1:${WORKSPACE_NAME/(.*)/${1:/upcase}/}_${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_}",
+			"#define ${1:${WORKSPACE_NAME/(.*)/${1:/upcase}/}_${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_}",
+			"\n$0\n",
+			"#endif  // ${1:${WORKSPACE_NAME/(.*)/${1:/upcase}/}_${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H_}"
+		]
+	},
+	"namespace": {
+		"prefix": "ns",
+		"body": [
+			"namespace ${1:${WORKSPACE_NAME}} {",
+			"\n$0\n",
+			"}  // namespace $1"
+		]
+	},
+	"template": {
+		"prefix": "tem",
+		"body": "template<typename T$1>\n$0"
+	},
+	"class": {
+		"prefix": "class",
+		"body": [
+			"class $1 {",
+			"public:",
+			"    $1$0",
+			"};"
+		]
+	},
+	"struct": {
+		"prefix": "struct",
+		"body": [
+			"struct $1 {",
+			"    $0",
+			"};"
+		]
+	}
+}

@@ -1,0 +1,10 @@
+[user]
+    name = Xiaofeng Gao
+    email = xfgaocn@gmail.com
+[core]
+    editor = vim
+[alias]
+    st = status
+    lg = log --pretty=format:\"%h %s\" --graph
+[diff]
+    tool = vimdiff
